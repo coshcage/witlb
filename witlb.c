@@ -54,7 +54,7 @@ int main()
 
 		fclose(fp);
 
-		j = 1 + rand() / ((RAND_MAX + 1u) / 1308);
+		j = 1 + rand() / ((RAND_MAX + 1u) / j);
 
 		if (NULL != (pnode = treBSTFindData_A(*pt, &j, _grpCBFCompareInteger)))
 			printf("%s\n", ((P_NAME)pnode->knot.pdata)->name);
